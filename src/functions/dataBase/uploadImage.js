@@ -12,6 +12,8 @@ const UploadImage = (e,file,fileName,callback)=>{
         getDownloadURL(ref(storage, `images/${fileName}`)).then((url) => {
           callback(url);
         });
+      }).catch((error) => {
+        console.log(error);
       });
 }
 export default UploadImage;
