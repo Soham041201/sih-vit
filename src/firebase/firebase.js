@@ -1,6 +1,7 @@
 
 import { initializeApp } from "firebase/app";
-
+import { getFirestore} from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 const firebaseConfig = {
   apiKey: "AIzaSyCgw6dSRNElF-YTyyYgVOg4Pp9j8YTuXqY",
   authDomain: "smart-india-hackathon-d1a3c.firebaseapp.com",
@@ -13,5 +14,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const db = getFirestore();
+const storage = getStorage();
 
+export {db,storage}
 export default app;
