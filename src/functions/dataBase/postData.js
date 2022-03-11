@@ -1,8 +1,7 @@
 import { doc, setDoc } from "firebase/firestore";
-import { db } from "../firebase/firebase";
+import { db } from "../../firebase/firebase";
 
-const PostData = async (data,docName, callback) => {
-
+const PostData = async (data, docName, callback) => {
   await setDoc(doc(db, `${docName}`, `${data.email}`), data)
     .then((res) => {
       callback(res);
@@ -12,4 +11,4 @@ const PostData = async (data,docName, callback) => {
     });
 };
 
-export default  PostData;
+export default PostData;
