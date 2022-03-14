@@ -8,12 +8,13 @@ import Product from "./pages/Product";
 import Forum from "./pages/Forum";
 import Forums from "./pages/Forums";
 import Nav from "./Components/Nav";
-import { ChakraProvider } from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
+import theme from "./chakra-theme/theme";
 
 function App() {
   return (
-    <>
-      <ChakraProvider>
+    <Box>
+      <ChakraProvider theme={theme}>
         <div className="App">
           <Nav />
           <Routes>
@@ -26,7 +27,7 @@ function App() {
           </Routes>
         </div>
       </ChakraProvider>
-    </>
+    </Box>
   );
 }
 

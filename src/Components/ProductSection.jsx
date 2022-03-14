@@ -1,11 +1,31 @@
+import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { Box, Circle, HStack, Icon, Text } from "@chakra-ui/react";
+import { productHunt } from "../icons/icons";
 
 function ProductSection() {
   return (
     <>
-        {/* <img src="https://cdn-icons.flaticon.com/png/512/5379/premium/5379249.png?token=exp=1647059244~hmac=2456b180165826bc18faf68d7a09bf0c" alt="P" style={{"width":"20px"}} /> */}
-        Products
-      {/* <AccessAlarmIcon /> */}
-      BharatPe
+      <Box padding={"1rem"}>
+        <HStack padding={"1rem"}>
+          <Icon boxSize={"2rem"} as={productHunt}></Icon>
+          <Text fontSize="2xl">Products</Text>
+        </HStack>
+
+        <HStack>
+          <Circle width="3.3rem">
+            <img src="https://bit.ly/3w2CQzO" alt="bharatPe" />
+          </Circle>
+          <Box padding={"0.5rem"}>
+            <Text fontSize="lg" fontWeight={500}>
+              BharatPe
+            </Text>
+            <Text fontSize="sm">
+              Mujhse bada dukan ka network kisi ke pass nhi. One India, One QR.
+            </Text>
+          </Box>
+          <ArrowForwardIcon />
+        </HStack>
+      </Box>
     </>
   );
 }

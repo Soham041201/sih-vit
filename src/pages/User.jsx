@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
-//
-import { Grid, GridItem } from "@chakra-ui/react";
+// chakra
+import { Grid, GridItem, Box } from "@chakra-ui/react";
 
 // components
 import ProfileDetails from "../Components/ProfileDetails";
@@ -10,30 +10,35 @@ import ProfileDetails from "../Components/ProfileDetails";
 import PostsActivitySection from "../Components/PostsActivitySection";
 import ProductSection from "../Components/ProductSection";
 
+// check if current screen is desktop or mobile
+// import { useMediaQuery } from "@chakra-ui/media-query";
+// const [isSmallScreen] = useMediaQuery("(max-width: 768px)");
+
 function User() {
   //get user using userid
   const { userid } = useParams();
+  console.log("userid:", userid);
 
   return (
-    <>
+    <Box padding={"1rem"}>
+      {/* <p >Screen {isSmallScreen ? "Chhoti" : "Badi"} h!</p> */}
       <Grid
         h="200px"
         templateRows="repeat(2, 1fr)"
-        templateColumns="repeat(4, 1fr)"
+        templateColumns="repeat(5, 1fr)"
         gap={4}
       >
-        <GridItem colSpan={4} bg="tomato">
+        <GridItem colSpan={5} borderRadius="10px" bg="#fff">
           <ProfileDetails />
-          <img src="https://bit.ly/3hZNejk" alt="" />
         </GridItem>
-        <GridItem colSpan={2} bg="papayawhip">
+        <GridItem colSpan={{ base: 5, md: 3 }}>
           <PostsActivitySection />
         </GridItem>
-        <GridItem colSpan={2} bg="papayawhip">
+        <GridItem colSpan={{ base: 5, md: 2 }} borderRadius="10px" bg="#fff">
           <ProductSection />
         </GridItem>
       </Grid>
-    </>
+    </Box>
   );
 }
 
