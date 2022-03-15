@@ -1,102 +1,54 @@
-import { Flex, Text, Box, Icon, HStack } from "@chakra-ui/react";
-import { chat, thumbsUp, stack } from "../icons/icons";
+import {
+  Text,
+  VStack,
+  Icon,
+  HStack,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import { stack } from "../icons/icons";
 import Vector from "../icons/Vector.svg";
 
-function PostsActivitySection() {
+import UserPosts from "./UserPosts";
+
+const posts = [
+  {
+    name: "Bhai ye tu kya kar raha hai",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu lobortis lorem, eget scelerisque ipsum. Ut at turpis in lectus posuere dapibus eget at erat. Etiam tincidunt metus quis rutrum sodales...",
+  },
+  {
+    name: "Mein kisi ko khush karne nhi baitha hoon",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu lobortis lorem, eget scelerisque ipsum. Ut at turpis in lectus posuere dapibus eget at erat. Etiam tincidunt metus quis rutrum sodales...",
+  },
+  {
+    name: "Tumne 3 deegree waste ki... mera khoon kholra hai",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu lobortis lorem, eget scelerisque ipsum. Ut at turpis in lectus posuere dapibus eget at erat. Etiam tincidunt metus quis rutrum sodales...",
+  },
+];
+
+const PostsActivitySection = () => {
   return (
-    <>
-      <Flex flexDir={"column"} gap={6} padding="1rem">
-        <HStack h={"4rem"} padding="2rem" bg="#fff" gap={"2rem"}>
-          <HStack>
-            <img src={Vector} alt="Posts" />
-            <Text fontSize={"xl"}>Posts</Text>
-          </HStack>
-
-          <HStack>
-            <Icon as={stack} boxSize={"1.7rem"}></Icon>
-            <Text fontSize={"xl"}>Activity</Text>
-          </HStack>
+    <VStack gap={6} padding="1rem">
+      <HStack
+        h={"4rem"}
+        padding="2rem"
+        bg={useColorModeValue("#fff", "gray.800")}
+        gap={"2rem"}
+      >
+        <HStack>
+          <img src={Vector} alt="Posts" />
+          <Text fontSize={"xl"}>Posts</Text>
         </HStack>
-        {/* first post starts here */}
-        <Flex>
-          <Flex
-            fontSize="1.3rem"
-            flexDir="column"
-            gap={5}
-            alignSelf="center"
-            padding={".5rem 1rem"}
-          >
-            <Icon boxSize={"25px"} as={thumbsUp}></Icon>
-            <Icon boxSize={"25px"} as={chat}></Icon>
-          </Flex>
-          <Box padding={".8rem"} bg="#fff" borderRadius={"6px"}>
-            <Text fontSize="xl" lineHeight={1.5}>
-              Bhai ye tu kya kar raha hai
-            </Text>
-            <Text fontSize="sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum eu lobortis lorem, eget scelerisque ipsum. Ut at turpis
-              in lectus posuere dapibus eget at erat. Etiam tincidunt metus quis
-              rutrum sodales...
-            </Text>
-          </Box>
-        </Flex>
-        {/* end of first post */}
 
-        {/*  */}
-
-        <Flex>
-          <Flex
-            fontSize="1.3rem"
-            flexDir="column"
-            gap={5}
-            alignSelf="center"
-            padding={".5rem 1rem"}
-          >
-            <Icon boxSize={"25px"} as={thumbsUp}></Icon>
-            <Icon boxSize={"25px"} as={chat}></Icon>
-          </Flex>
-          <Box padding={".8rem"} bg="#fff" borderRadius={"6px"}>
-            <Text fontSize="xl" lineHeight={1.5}>
-              Mein kisi ko khush karne nhi baitha hoon
-            </Text>
-            <Text fontSize="sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum eu lobortis lorem, eget scelerisque ipsum. Ut at turpis
-              in lectus posuere dapibus eget at erat. Etiam tincidunt metus quis
-              rutrum sodales...
-            </Text>
-          </Box>
-        </Flex>
-
-        {/*  */}
-        <Flex>
-          <Flex
-            fontSize="1.3rem"
-            flexDir="column"
-            gap={5}
-            alignSelf="center"
-            padding={".5rem 1rem"}
-          >
-            <Icon boxSize={"25px"} as={thumbsUp}></Icon>
-            <Icon boxSize={"25px"} as={chat}></Icon>
-          </Flex>
-          <Box padding={".8rem"} bg="#fff" borderRadius={"6px"}>
-            <Text fontSize="xl" lineHeight={1.5}>
-              Tumne 3 deegree waste ki... mera khoon kholra hai
-            </Text>
-            <Text fontSize="sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum eu lobortis lorem, eget scelerisque ipsum. Ut at turpis
-              in lectus posuere dapibus eget at erat. Etiam tincidunt metus quis
-              rutrum sodales...
-            </Text>
-          </Box>
-        </Flex>
-        {/* last post ends here */}
-      </Flex>
-    </>
+        <HStack>
+          <Icon as={stack} boxSize={"1.7rem"}></Icon>
+          <Text fontSize={"xl"}>Activity</Text>
+        </HStack>
+      </HStack>
+      {posts.map(({ name, desc }, key) => {
+        return <UserPosts postName={name} postDesc={desc} key={key} />;
+      })}
+    </VStack>
   );
-}
+};
 
 export default PostsActivitySection;

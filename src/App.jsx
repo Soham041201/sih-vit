@@ -11,7 +11,7 @@ import Nav from "./Components/Nav";
 import { Box, ChakraProvider } from "@chakra-ui/react";
 import theme from "./chakra-theme/theme";
 
-function App() {
+const App = () => {
   return (
     <Box>
       <ChakraProvider theme={theme}>
@@ -29,6 +29,6 @@ function App() {
       </ChakraProvider>
     </Box>
   );
-}
+};
 
 export default App;

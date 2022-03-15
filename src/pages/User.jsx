@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
 // chakra
-import { Grid, GridItem, Box } from "@chakra-ui/react";
+import { Grid, GridItem, Box, useColorModeValue } from "@chakra-ui/react";
 
 // components
 import ProfileDetails from "../Components/ProfileDetails";
@@ -14,10 +14,10 @@ import ProductSection from "../Components/ProductSection";
 // import { useMediaQuery } from "@chakra-ui/media-query";
 // const [isSmallScreen] = useMediaQuery("(max-width: 768px)");
 
-function User() {
+const User = () => {
   //get user using userid
   const { userid } = useParams();
-  console.log("userid:", userid);
+  // console.log("userid:", userid);
 
   return (
     <Box padding={"1rem"}>
@@ -28,18 +28,26 @@ function User() {
         templateColumns="repeat(5, 1fr)"
         gap={4}
       >
-        <GridItem colSpan={5} borderRadius="10px" bg="#fff">
+        <GridItem
+          colSpan={5}
+          borderRadius="10px"
+          bg={useColorModeValue("#fff", "gray.800")}
+        >
           <ProfileDetails />
         </GridItem>
         <GridItem colSpan={{ base: 5, md: 3 }}>
           <PostsActivitySection />
         </GridItem>
-        <GridItem colSpan={{ base: 5, md: 2 }} borderRadius="10px" bg="#fff">
+        <GridItem
+          colSpan={{ base: 5, md: 2 }}
+          borderRadius="10px"
+          bg={useColorModeValue("#fff", "gray.800")}
+        >
           <ProductSection />
         </GridItem>
       </Grid>
     </Box>
   );
-}
+};
 
 export default User;

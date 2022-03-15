@@ -7,16 +7,17 @@ const styles = {
       // light mode bg, text color
       color: mode("gray.800", "whiteAlpha.800")(props),
       // dark mode bg, text color
-      bg: mode("gray.100", "#141214")(props),
+      bg: mode("gray.100", "gray.600")(props),
     },
   }),
 };
 
 // const components = {
-//   Drawer: {
+//   HStack: {
 //     baseStyle: (props) => ({
 //       dialog: {
-//         bg: mode("white", "red")(props),
+//         color: mode("blue", "red")(props),
+//         bg: mode("blue", "red")(props),
 //       },
 //     }),
 //   },

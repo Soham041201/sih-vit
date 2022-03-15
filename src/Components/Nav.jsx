@@ -1,9 +1,7 @@
-// import { ReactNode } from "react";
 import {
   Box,
   Flex,
   Avatar,
-  // Link,
   Button,
   Menu,
   MenuButton,
@@ -33,7 +31,7 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 //   </Link>
 // );
 
-export default function Nav() {
+const Nav = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -90,4 +88,6 @@ export default function Nav() {
       </Box>
     </>
   );
-}
+};
+
+export default Nav;

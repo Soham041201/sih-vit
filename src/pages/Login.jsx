@@ -3,11 +3,9 @@ import PostData from "../functions/dataBase/postData";
 import UploadImage from "../functions/dataBase/uploadImage";
 import GetData from "../functions/dataBase/getData";
 
-
-function Login() {
+const Login = () => {
   return (
     <>
-
       <button
         onClick={() =>
           GoogleSignIn((user) => {
@@ -61,6 +59,6 @@ function Login() {
       />
     </>
   );
-}
+};
 
 export default Login;
