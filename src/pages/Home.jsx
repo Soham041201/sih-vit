@@ -1,15 +1,24 @@
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Link, VStack } from "@chakra-ui/react";
 import React from "react";
-import { isAuthenticated } from "../utils/Authenticated";
 
-function Home() {
+const Home = () => {
   return (
     <>
-      <h1>Home</h1>
-      <h2>{isAuthenticated()}</h2>
+      <VStack>
+        <Link href="/" isExternal>
+          Home <ExternalLinkIcon mx="2px" />
+        </Link>
+        <Link href="/user/users" isExternal>
+          User Profile Page <ExternalLinkIcon mx="2px" />
+        </Link>
+        <Link href="/forums/forumid" isExternal>
+          Business Page <ExternalLinkIcon mx="2px" />
+        </Link>
+      </VStack>
     </>
   );
-}
-
-
+};
 
 export default Home;
+

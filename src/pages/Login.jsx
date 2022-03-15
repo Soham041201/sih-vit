@@ -2,9 +2,8 @@ import GoogleSignIn from "../functions/authProviders/googleSign";
 import PostData from "../functions/dataBase/postData";
 import UploadImage from "../functions/dataBase/uploadImage";
 import GetData from "../functions/dataBase/getData";
-import Typography from '@mui/material/Typography'
 
-function Login() {
+const Login = () => {
   return (
     <>
       <button
@@ -60,6 +59,6 @@ function Login() {
       />
     </>
   );
-}
+};
 
 export default Login;

@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-function Forum() {
+const Forum = () => {
   return (
     <>
-      <h1>Forum</h1>
+      Forum
     </>
-  );
+  )
 }
 
-export default Forum;
+export default Forum
