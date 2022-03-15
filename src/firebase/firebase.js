@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
+import { getAuth } from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyCgw6dSRNElF-YTyyYgVOg4Pp9j8YTuXqY",
   authDomain: "smart-india-hackathon-d1a3c.firebaseapp.com",
@@ -15,5 +16,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 const storage = getStorage();
+const authentication = getAuth(app);
 
-export { db, storage, app };
+export { db, storage, app, authentication };
