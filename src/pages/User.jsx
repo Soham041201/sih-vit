@@ -17,7 +17,7 @@ import ProductSection from "../Components/ProductSection";
 const User = () => {
   //get user using userid
   const { userid } = useParams();
-  // console.log("userid:", userid);
+  console.log("userid:", userid);
 
   return (
     <Box padding={"1rem"}>
@@ -35,7 +35,7 @@ const User = () => {
         >
           <ProfileDetails />
         </GridItem>
-        <GridItem colSpan={{ base: 5, md: 3 }} width='100%'>
+        <GridItem colSpan={{ base: 5, md: 3 }} width="100%">
           <PostsActivitySection />
         </GridItem>
         <GridItem

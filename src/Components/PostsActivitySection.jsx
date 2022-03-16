@@ -29,6 +29,7 @@ const PostsActivitySection = () => {
   return (
     <VStack gap={6} padding="1rem">
       <HStack
+        width={"100%"}
         h={"4rem"}
         padding="2rem"
         bg={useColorModeValue("#fff", "gray.800")}
