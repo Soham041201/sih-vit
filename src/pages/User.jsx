@@ -35,7 +35,7 @@ const User = () => {
         >
           <ProfileDetails />
         </GridItem>
-        <GridItem colSpan={{ base: 5, md: 3 }}>
+        <GridItem colSpan={{ base: 5, md: 3 }} width='100%'>
           <PostsActivitySection />
         </GridItem>
         <GridItem
