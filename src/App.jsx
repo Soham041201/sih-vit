@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 
 //pages
 import Home from "./pages/Home";
@@ -8,23 +7,28 @@ import Login from "./pages/Login";
 import Product from "./pages/Product";
 import Forum from "./pages/Forum";
 import Forums from "./pages/Forums";
-import UserProfile from "./pages/UserProfile";
+import Nav from "./Components/Nav";
+import { Box, ChakraProvider } from "@chakra-ui/react";
+import theme from "./chakra-theme/theme";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="user/:userid" element={<UserProfile />} />
-          <Route path="user/:userid/:productid" element={<Product />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/forums" element={<Forums />} />
-          <Route path="/forums/:forumid" element={<Forum />} />
-        </Routes>
-      </div>
-    </>
+    <Box>
+      <ChakraProvider theme={theme}>
+        <div className="App">
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="user/:userid" element={<User />} />
+            <Route path="user/:userid/:productid" element={<Product />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/forums" element={<Forums />} />
+            <Route path="/forums/:forumid" element={<Forum />} />
+          </Routes>
+        </div>
+      </ChakraProvider>
+    </Box>
   );
-}
+};
 
 export default App;
