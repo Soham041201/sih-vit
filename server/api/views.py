@@ -29,6 +29,7 @@ firebase_app = firebase_admin.initialize_app(firebase_creds)
 
 #     return Response(serializer.data)
 
+# to view profile of a single person
 @api_view(['GET'])
 def view_profile(request, user_id):
     try:
@@ -38,6 +39,7 @@ def view_profile(request, user_id):
         return Response({'error':'Profile does not exist'})
     return Response(serializer.data)
 
+# to create a new profile
 @api_view(['POST'])
 def create_profile(request):
     serializer = ProfileSerializer(data=request.data)
