@@ -1,6 +1,6 @@
 import React from "react";
-import { Circle, HStack, Text, Box } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { Circle, HStack, Text, Box, Icon } from "@chakra-ui/react";
+import { arrow } from "../icons/icons";
 
 const UserProduct = ({ productName, productDesc }) => {
   return (
@@ -14,7 +14,9 @@ const UserProduct = ({ productName, productDesc }) => {
         </Text>
         <Text fontSize="sm">{productDesc}</Text>
       </Box>
-      <ArrowForwardIcon />
+      <Box>
+        <Icon as={arrow} align="end"></Icon>
+      </Box>
     </HStack>
   );
 };
