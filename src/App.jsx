@@ -10,6 +10,7 @@ import Forums from "./pages/Forums";
 import Nav from "./Components/Nav";
 import { Box, ChakraProvider } from "@chakra-ui/react";
 import theme from "./chakra-theme/theme";
+import Business from "./pages/Business";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="user/:userid" element={<User />} />
+            <Route path="user/business" element={<Business />} />
             <Route path="user/:userid/:productid" element={<Product />} />
             <Route path="/login" element={<Login />} />
             <Route path="/forums" element={<Forums />} />
