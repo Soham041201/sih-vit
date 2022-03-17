@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "smart-india-hackathon-d1a3c",
+  "private_key_id": "fa73bcfecd94ff8205572a0bd17f652fb1b7819d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCUeiLnaObAIXL5\nO/x+uN9owUjfaPvzdEhVsslbztXNuXw53ehnvrHtoYBGMSUFmSiFHaAM4HatiqnA\noQjwzCWwL4rM4V/4LzrzCqT6BeGzZF8ZVyX3nnXqYhX10g5Y3Ev0hbjyWABAd63i\nFi4E17E9qjg4FZifov1pI8BX+SwWE0V0il23gmGgYw/DYgX955EDKK1Guf63Sx8T\nTjvpiOZNnK5yCFvKOab8rSuiHsZJ/h+ciEWopODagca4s0bA9AiipvExlZWrMS5z\nGXciWF1Dk46LtFD8c2ST19OTbDHuiK1x2aatuvJ1SFfqKbd7ING0QUSwD51cnA9i\nPdilBmaxAgMBAAECggEABRdunruhzRUgj5QrZ4+QprOZG4Mqv6mdSOYLgmTUf1xk\n2oml7HfVO2pCPzX0eG2M/oqaaFKiszcJ9O94wmQnxzPMKVQxsa2x8m9rIqFEwP14\nRuLOjCAgmEfii6ZXRFwSlTkoM1RJ9uv7uCDtVVBttSkDCkZQUGobEUnO8N1cMgoM\nA6Jfhi1QJwiRxD7iS+XUw15TkN56bXo6VlubaJ2NR+vSfStl8BBWnlDCHRrURFWx\nkAlXDhtwYp4KCTpw5g0wUjL8xcW7qhwS3aytdaSRbcFx5kf81lhDu8AVNBikIFLo\npN7FCiSNrDq7CzFV5RhHBv5detSfu1+8iOf3YTduwQKBgQDH/q3mt+j1xF4Ee3qR\nUkjVIjz6ucrpPhWZPURr/UMX2uYFL9IfcYy3hdBd6eVBAqeapI2HBjC1QKOgW8QJ\no7XzLDPt/EOEXI9ohO1Y2GDnu8P7erIk2X18uk7Q41TOVrxKUB5n+W8z6rOd48eU\nMiaOe7FIWjMlmoBCdNMkJKwzkQKBgQC+DjrDzAfR+Cip9xwtZsLBCe684UBTSg+R\npQGQ562TncY0up0y4cOY3EVz7k9vPytb5FOkOkEyNzcq9c4lv8h4qcYK2nnmm8sj\nx1oxs+LckYzj/QtUJwy8YHu7HghptJXXh+tMCrNlQpYP/laCS2SOSSJrvwgaS3XB\n8n/88SUxIQKBgD5rCA9n+rcpsEYp25kbW0vZwbpm3iNpkwgejQo/Iv+A/CVGRYg2\nwjpM8zk8VKazk2e6T8mCbxVCtU7JFSgFBjZ850AxaUkYMlHmmsUN00C/42zLYGoL\nzxRseUjMip1TiLSQyMyelsxXRfPTMWjZNhtmE3CHZksoKzuShotTPsNhAoGAVDcZ\n8wjFrlS4MBg/dB7EzaUJFMj7J+z5WSA0wXDniTGwUk0eux0u/t0cKXK/4ButqtpR\n9cOagBXXbEHfRvrkahNQnh6RRY5jRUdgwAVl0Tbtp1jJXFCxZAeczB1SvQQ4IXko\n2lkjhQssU4nv62xc8m+VwQi1HnGxjG9YJ0zzngECgYA7Z1T9mXYnburQ3tv9lq0s\nl1RXeLc+Sa2LJaHPee1pCy8ah0sFEA/Z2CrjHvNbzd1fodKsIQlQH7ZnOevhGMLi\nct+ZjxfWHSwcDz1u+bvVQrZbgGScNRDq0088EdVa6w6YfTjxpa5tsFtBCPpHSyHz\n5nEP4DpEhSh5H4Z8Zoh7vg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-3ts33@smart-india-hackathon-d1a3c.iam.gserviceaccount.com",
+  "client_id": "105970685204320017780",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-3ts33%40smart-india-hackathon-d1a3c.iam.gserviceaccount.com"
+}

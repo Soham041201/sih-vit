@@ -1,5 +1,5 @@
 import { getAuth } from "firebase/auth";
-import app from "./firebase/firebase";
+import app from "../../firebase/firebase";
 
 const RegisterUsingEmailAndPassword = async (email, password, callback) => {
   const auth = getAuth(app);
