@@ -38,14 +38,14 @@ const PostsActivitySection = () => {
   // });
   // console.log(setActive({isActive:true,...active }));
   return (
-    <VStack gap={4} padding="1rem">
+    <VStack gap={4} padding="1rem 0">
       <HStack
         width={"100%"}
         gap={"2rem"}
         h={"4rem"}
         paddingLeft="2rem"
-        bg={useColorModeValue("#fff", "gray.800")}
         borderRadius="10px"
+        bg={useColorModeValue("#fff", "gray.800")}
       >
         <HStack
           cursor={"pointer"}
@@ -80,7 +80,7 @@ const PostsActivitySection = () => {
           })}
         </>
       ) : (
-        <Box align={"start"} w="100%" minHeight="30vh">
+        <Box align={"start"} w="100%">
           {people.map(({ name, position }, key) => {
             return <PeopleSection name={name} position={position} key={key} />;
           })}
