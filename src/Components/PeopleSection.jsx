@@ -1,14 +1,26 @@
 import React from "react";
-import { Circle, HStack, Text, Box, Icon, useColorModeValue} from "@chakra-ui/react";
+import { HStack, Text, Box, Icon, useColorModeValue } from "@chakra-ui/react";
 import { arrow } from "../icons/icons";
 
-const PeopleSection = ({ name, position }) => {
+const PeopleSection = ({ imgURL, name, position }) => {
   return (
     <>
-      <HStack padding="1rem" w="100%" borderRadius="10px" bg={useColorModeValue("#fff", "gray.800")}>
-        <Circle width="3.3rem">
-          <img src="https://bit.ly/3w2CQzO" alt="bharatPe" />
-        </Circle>
+      <HStack
+        padding="1rem"
+        w="100%"
+        borderRadius="10px"
+        bg={useColorModeValue("#fff", "gray.800")}
+      >
+        <img
+          src={imgURL}
+          alt={name}
+          style={{
+            height: "50px",
+            width: "50px",
+            objectFit: "cover",
+            borderRadius: "50%",
+          }}
+        />
         <Box padding={"0.5rem"}>
           <Text fontSize="lg" fontWeight={500}>
             {name}

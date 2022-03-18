@@ -1,6 +1,6 @@
 import { Grid, GridItem, Box, useColorModeValue } from "@chakra-ui/react";
 import BusinessProfile from "../Components/BusinessProfile";
-import UpdatesPeopleSection from "../Components/UpdatesPeopleSection"
+import UpdatesPeopleSection from "../Components/UpdatesPeopleSection";
 import JobSection from "../Components/JobSection";
 
 const Business = () => {
@@ -25,7 +25,7 @@ const Business = () => {
         <GridItem
           colSpan={{ base: 5, md: 2 }}
           borderRadius="10px"
-          marginTop="1rem"
+          margin="1rem 0 1rem 1rem"
           bg={useColorModeValue("#fff", "gray.800")}
         >
           <JobSection />

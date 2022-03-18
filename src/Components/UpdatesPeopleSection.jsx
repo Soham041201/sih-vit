@@ -23,8 +23,8 @@ const updates = [
 ];
 
 const people = [
-  { name: "Ashneer Grover", position: "Founder and MD" },
-  { name: "Anupam Mittal", position: "Lead Investor" },
+  { imgURL:"https://bit.ly/365cnXQ", name: "Ashneer Grover", position: "Founder and MD" },
+  { imgURL:"https://bit.ly/34TCyQD", name: "Anupam Mittal", position: "Lead Investor" },
 ];
 
 const PostsActivitySection = () => {
@@ -81,8 +81,8 @@ const PostsActivitySection = () => {
         </>
       ) : (
         <Box align={"start"} w="100%">
-          {people.map(({ name, position }, key) => {
-            return <PeopleSection name={name} position={position} key={key} />;
+          {people.map(({ imgURL, name, position }, key) => {
+            return <PeopleSection imgURL={imgURL} name={name} position={position} key={key} />;
           })}
         </Box>
       )}

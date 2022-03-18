@@ -15,6 +15,9 @@ const Home = () => {
         <Link href="/user/business" isExternal>
           Business Page <ExternalLinkIcon mx="2px" />
         </Link>
+        <Link href="/problems" isExternal>
+        Problems Page <ExternalLinkIcon mx="2px" />
+        </Link>
       </VStack>
     </>
   );
