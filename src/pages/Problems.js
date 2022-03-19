@@ -53,7 +53,7 @@ const Problems = () => {
     <VStack align="start" padding={"1rem 4rem"} gap="1rem">
       <HStack>
         <Input
-          inputValue={inputValue}
+          inputvalue={inputValue}
           onChange={handleChange}
           minW="20rem"
           placeholder="Search for a problem statement"
