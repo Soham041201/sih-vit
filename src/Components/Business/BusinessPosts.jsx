@@ -1,5 +1,5 @@
 import React from "react";
-import { heart, chat } from "../icons/icons";
+import { heart, chat } from "../../icons/icons";
 import {
   Text,
   Icon,

@@ -1,6 +1,6 @@
 import React from "react";
 import { Circle, HStack, Text, Box, Icon } from "@chakra-ui/react";
-import { arrow } from "../icons/icons";
+import { arrow } from "../../icons/icons";
 
 const UserProduct = ({ productName, productDesc }) => {
   return (

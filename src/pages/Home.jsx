@@ -16,10 +16,10 @@ const Home = () => {
           Business Page <ExternalLinkIcon mx="2px" />
         </Link>
         <Link href="/problems" isExternal>
-        Problems Page <ExternalLinkIcon mx="2px" />
+          Problems Page <ExternalLinkIcon mx="2px" />
         </Link>
         <Link href="/jobs" isExternal>
-        Jobs Page <ExternalLinkIcon mx="2px" />
+          Jobs Page <ExternalLinkIcon mx="2px" />
         </Link>
       </VStack>
     </>
@@ -27,4 +27,3 @@ const Home = () => {
 };
 
 export default Home;
-

@@ -1,6 +1,6 @@
 import React from "react";
 import { HStack, Text, Box, Icon, useColorModeValue } from "@chakra-ui/react";
-import { arrow } from "../icons/icons";
+import { arrow } from "../../icons/icons";
 
 const PeopleSection = ({ imgURL, name, position }) => {
   return (

@@ -1,6 +1,6 @@
 import { Box, HStack, VStack, Icon, Text } from "@chakra-ui/react";
-import { briefCase } from "../icons/icons";
-import UserProduct from "./UserProduct";
+import { briefCase } from "../../icons/icons";
+import UserProduct from "../User/UserProduct";
 
 const JobSection = () => {
   const posts = [

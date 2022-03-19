@@ -1,11 +1,11 @@
 import React from "react";
-import { HStack, Text, Box,  useColorModeValue } from "@chakra-ui/react";
+import { HStack, Text, Box, useColorModeValue } from "@chakra-ui/react";
 
 const JobListing = ({ imgURL, name, desc }) => {
   return (
     <>
       <HStack
-      padding="1rem"
+        padding="1rem"
         w="100%"
         bg={useColorModeValue("#fff", "gray.800")}
       >

@@ -4,10 +4,10 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import User from "./pages/User";
 import Login from "./pages/Login";
-import Product from "./pages/Product";
+// import Product from "./pages/Product";
 import Forum from "./pages/Forum";
 import Forums from "./pages/Forums";
-import Nav from "./Components/Nav";
+import Nav from "./Components/Nav/Nav";
 import { Box, ChakraProvider } from "@chakra-ui/react";
 import theme from "./chakra-theme/theme";
 import Business from "./pages/Business";
@@ -24,7 +24,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="user/:userid" element={<User />} />
             <Route path="user/business" element={<Business />} />
-            <Route path="user/:userid/:productid" element={<Product />} />
+            {/* <Route path="user/:userid/:productid" element={<Product />} /> */}
             <Route path="/login" element={<Login />} />
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/forums" element={<Forums />} />

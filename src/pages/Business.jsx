@@ -1,7 +1,7 @@
 import { Grid, GridItem, Box, useColorModeValue } from "@chakra-ui/react";
-import BusinessProfile from "../Components/BusinessProfile";
-import UpdatesPeopleSection from "../Components/UpdatesPeopleSection";
-import JobSection from "../Components/JobSection";
+import BusinessProfile from "../Components/Business/BusinessProfile";
+import UpdatesPeopleSection from "../Components/Business/UpdatesPeopleSection";
+import JobSection from "../Components/Business/JobSection";
 
 const Business = () => {
   return (

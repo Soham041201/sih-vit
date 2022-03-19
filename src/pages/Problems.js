@@ -7,7 +7,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
-import ProblemLink from "../Components/ProblemLink";
+import ProblemLink from "../Components/Problems/ProblemLink";
 
 const problems = [
   {

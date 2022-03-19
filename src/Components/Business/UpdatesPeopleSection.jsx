@@ -7,7 +7,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { target, account } from "../icons/icons";
+import { target, account } from "../../icons/icons";
 import BusinessPosts from "./BusinessPosts";
 import PeopleSection from "./PeopleSection";
 

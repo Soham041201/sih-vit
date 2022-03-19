@@ -1,6 +1,6 @@
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
-import JobListings from "../Components/JobListings";
+import JobListings from "../Components/Jobs/JobListings";
 
 const jobs = [
   {

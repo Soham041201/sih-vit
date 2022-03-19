@@ -6,7 +6,7 @@ import {
   HStack,
   Icon,
 } from "@chakra-ui/react";
-import { globe, mail, linkedIn, twitter } from "../icons/icons";
+import { globe, mail, linkedIn, twitter } from "../../icons/icons";
 
 const BusinessProfile = () => {
   return (
