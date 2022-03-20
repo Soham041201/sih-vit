@@ -13,6 +13,7 @@ import theme from "./chakra-theme/theme";
 import Business from "./pages/Business";
 import Problems from "./pages/Problems";
 import Jobs from "./pages/Jobs";
+import Notification from "./Components/Notification/Notification";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="user/business" element={<Business />} />
             {/* <Route path="user/:userid/:productid" element={<Product />} /> */}
             <Route path="/login" element={<Login />} />
+            <Route path="/noti" element={<Notification />} />
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/forums" element={<Forums />} />
             <Route path="/problems" element={<Problems />} />

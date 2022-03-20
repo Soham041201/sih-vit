@@ -21,6 +21,9 @@ const Home = () => {
         <Link href="/jobs" isExternal>
           Jobs Page <ExternalLinkIcon mx="2px" />
         </Link>
+        <Link href="/noti" isExternal>
+          Notifications <ExternalLinkIcon mx="2px" />
+        </Link>
       </VStack>
     </>
   );
