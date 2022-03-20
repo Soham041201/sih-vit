@@ -1,5 +1,5 @@
 import React from "react";
-import { thumbsUp, chat } from "../icons/icons";
+import { thumbsUp, chat } from "../../icons/icons";
 import {
   Text,
   Icon,

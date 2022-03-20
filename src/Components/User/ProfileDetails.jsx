@@ -1,5 +1,5 @@
 import { Text, VStack, Button, HStack, Icon } from "@chakra-ui/react";
-import { globe, moneyDollar, mail, linkedIn, twitter } from "../icons/icons";
+import { globe, moneyDollar, mail, linkedIn, twitter } from "../../icons/icons";
 
 const ProfileDetails = () => {
   return (

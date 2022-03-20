@@ -1,14 +1,8 @@
 import { useParams } from "react-router-dom";
-
-// chakra
 import { Grid, GridItem, Box, useColorModeValue } from "@chakra-ui/react";
-
-// components
-import ProfileDetails from "../Components/ProfileDetails";
-
-//styles
-import PostsActivitySection from "../Components/PostsActivitySection";
-import ProductSection from "../Components/ProductSection";
+import ProfileDetails from "../Components/User/ProfileDetails";
+import PostsActivitySection from "../Components/User/PostsActivitySection";
+import ProductSection from "../Components/User/ProductSection";
 
 // check if current screen is desktop or mobile
 // import { useMediaQuery } from "@chakra-ui/media-query";

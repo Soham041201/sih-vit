@@ -12,8 +12,17 @@ const Home = () => {
         <Link href="/user/users" isExternal>
           User Profile Page <ExternalLinkIcon mx="2px" />
         </Link>
-        <Link href="/forums/forumid" isExternal>
+        <Link href="/user/business" isExternal>
           Business Page <ExternalLinkIcon mx="2px" />
+        </Link>
+        <Link href="/problems" isExternal>
+          Problems Page <ExternalLinkIcon mx="2px" />
+        </Link>
+        <Link href="/jobs" isExternal>
+          Jobs Page <ExternalLinkIcon mx="2px" />
+        </Link>
+        <Link href="/noti" isExternal>
+          Notifications <ExternalLinkIcon mx="2px" />
         </Link>
       </VStack>
     </>
@@ -21,4 +30,3 @@ const Home = () => {
 };
 
 export default Home;
-

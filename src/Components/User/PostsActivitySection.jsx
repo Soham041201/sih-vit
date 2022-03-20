@@ -5,10 +5,9 @@ import {
   HStack,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { stack } from "../icons/icons";
-import Vector from "../icons/Vector.svg";
-
-import UserPosts from "./UserPosts";
+import { stack } from "../../icons/icons";
+import Vector from "../../icons/Vector.svg";
+import UserPosts from "../User/UserPosts"
 
 const posts = [
   {

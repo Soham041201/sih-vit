@@ -1,6 +1,6 @@
 import { Box, HStack, VStack, Icon, Text } from "@chakra-ui/react";
-import { productHunt } from "../icons/icons";
-import UserProduct from "../Components/UserProduct";
+import { productHunt } from "../../icons/icons";
+import UserProduct from "./UserProduct";
 
 const ProductSection = () => {
   return (
