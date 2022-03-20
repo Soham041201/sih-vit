@@ -10,7 +10,7 @@ const ProductSection = () => {
           <Icon boxSize={"2rem"} as={productHunt}></Icon>
           <Text fontSize="2xl">Products</Text>
         </HStack>
-        <VStack align="start" gap="0.5rem" padding="1rem 0">
+        <VStack align="start" gap="0.5rem" padding="1rem">
           <UserProduct
             productName="BharatPe"
             productDesc="Mujhse bada dukan ka network kisi ke pass nhi. One India, One QR."
