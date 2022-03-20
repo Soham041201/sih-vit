@@ -8,6 +8,7 @@ import {
   MenuList,
   MenuItem,
   MenuDivider,
+  Text,
   // useDisclosure,
   useColorModeValue,
   Stack,
@@ -36,21 +37,32 @@ const Nav = () => {
   // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+      <Box bg={useColorModeValue("whiteAlpha.900", "gray.900")} px={4}>
         <Flex
           h={16}
           basis={"80%"}
           alignItems={"center"}
           justifyContent={"space-between"}
         >
-          <Box>Logo</Box>
+          <Box>
+          logo
+          </Box>
+
+          <Box>
+          <Text fontSize="2xl" fontWeight={550} font-family='Nunito'>
+          Startup India
+          </Text>
+          </Box>
+        
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
-              <Button onClick={toggleColorMode}>
+            
+              <Button onClick={toggleColorMode} isRound="true">
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
-
+              
               <Menu>
+                
                 <MenuButton
                   as={Button}
                   rounded={"full"}

@@ -27,22 +27,24 @@ const posts = [
 
 const PostsActivitySection = () => {
   return (
-    <VStack gap={6} padding="1rem">
+
+    <VStack gap={6} padding="4 rem">
       <HStack
         width={"100%"}
         h={"4rem"}
-        padding="2rem"
+        padding="1rem"
         bg={useColorModeValue("#fff", "gray.800")}
         gap={"2rem"}
+        borderRadius="md"
       >
         <HStack>
           <img src={Vector} alt="Posts" />
           <Text fontSize={"xl"}>Posts</Text>
         </HStack>
 
-        <HStack>
+        <HStack >
           <Icon as={stack} boxSize={"1.7rem"}></Icon>
-          <Text fontSize={"xl"}>Activity</Text>
+          <Text fontSize={"xl"}> Activity</Text>
         </HStack>
       </HStack>
       {posts.map(({ name, desc }, key) => {
