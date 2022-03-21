@@ -4,6 +4,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from users.models import Profile
 from users.serializers import ProfileSerializer
+from businesspages.models import Tag, Post, BusinessPage
+from businesspages.serializers import PostSerializer, BusinessPageSerializer, TagSerializer
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import auth
@@ -31,9 +33,9 @@ firebase_app = firebase_admin.initialize_app(firebase_creds)
 
 # to view profile of a single person
 @api_view(['GET'])
-def view_profile(request, user_id):
+def view_profile(request, username):
     try:
-        profile = Profile.objects.get(user_id=user_id)
+        profile = Profile.objects.get(username=username)
         serializer = ProfileSerializer(profile, many=False)
     except:
         return Response({'error':'Profile does not exist'})
@@ -48,3 +50,43 @@ def create_profile(request):
         serializer.save()
 
     return Response(serializer.data)
+
+# businesspage apis
+# view a businesspage
+@api_view(['GET'])
+def view_businesspage(request, username):
+    try:
+        businesspage = BusinessPage.objects.get(username=username)
+        serializer = BusinessPageSerializer(businesspage, many=False)
+    except:
+        return Response({'error':'Page does not exist'})
+    return Response(serializer.data)
+
+# tag create
+@api_view(['POST'])
+def create_tag(request):
+    serializer = TagSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+
+    return Response(serializer.data)
+
+# list all tags
+@api_view(['GET'])
+def list_tags(request):
+    tags = Tag.objects.all()
+    serializer = TagSerializer(tags, many=True)
+    return Response(serializer.data)
+
+# post for business pages
+@api_view(['GET'])
+def get_businesspage_posts(request, username):
+    try:
+        posts = Post.objects.all()
+        serializer = PostSerializer(posts, many=True)
+    except:
+        return Response({'error':'Error in fetching posts'})
+    
+    return Response(serializer.data)
+
+

@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     'users',
+    'applications',
+    'businesspages',
 ]
 
 CORS_ALLOWED_ORIGINS = [
